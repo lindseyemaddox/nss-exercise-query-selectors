@@ -12,8 +12,11 @@ header.textContent = "Welcome to the Lindsey blog";
 // 2. Use JavaScript to obtain a reference to all article__header elements 
 // and change their classList property value to article__header important.
 
-// const headers = document.querySelectorAll(".article__header");
-// headers.classList.add("important");
+const headers = document.querySelectorAll(".article__header");
+
+for (i = 0; i < 1; i++) {
+  headers[i].classList.add("important");
+}
 
 
 // 3. Obtain a reference the element with a class of dashed and remove it.
