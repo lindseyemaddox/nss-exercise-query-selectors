@@ -15,11 +15,15 @@ header.textContent = "Welcome to the Lindsey blog";
 const headers = document.querySelectorAll(".article__header");
 
 for (let i = 0; i < headers.length; i++) {
-  headers[i].classList.add("important");
+  headers[i].classList.add("forLoop");
 }
 
-// headers[0].classList.add("important");
+headers[0].classList.add("brackets");
+headers[1].classList.add("brackets");
 
+headers.forEach(header => {
+  header.classList.add("forEach");
+})
 
 // 3. Obtain a reference the element with a class of dashed and remove it.
 
